@@ -2,7 +2,7 @@
 
 A small Unix shell written from scratch in C on Linux. It runs external programs, pipelines of any length, file redirection and background jobs, handles Ctrl-C / Ctrl-Z / Ctrl-D correctly through process groups and signals, and has an **x-ray mode** that prints every system-call-level step (tokens, parse tree, `fork`, `pipe`, `dup2`, `waitpid`) while a command runs. Two switchable **bug modes** reproduce classic shell bugs (a leaked pipe descriptor, zombie processes) on purpose, so they can be seen and then fixed live.
 
-Team project (Group 4) for *03603332 Operating Systems*, Computer Engineering and Informatics, Kasetsart University Sriracha Campus. The work was shared evenly across the team.
+Team project (Group 4) for *03603332 Operating Systems*, Computer Engineering and Informatics, Kasetsart University Sriracha Campus. I wrote all of the code (shell, tools and test suite); my teammates prepared the presentation slides.
 
 ---
 
