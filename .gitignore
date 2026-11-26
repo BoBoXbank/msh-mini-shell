@@ -1,0 +1,14 @@
+# build output
+/build/
+/bin/
+/msh
+*.o
+
+# runtime files from demos / tests
+out.txt
+vgcore.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

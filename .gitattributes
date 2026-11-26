@@ -1,0 +1,2 @@
+# keep Linux line endings even when the folder is committed from Windows
+* text=auto eol=lf

@@ -1,0 +1,35 @@
+ls -l
+ls | wc -l
+ls -l | grep msh | wc -l > /tmp/msh_memcheck.txt
+cat < /tmp/msh_memcheck.txt
+echo appended >> /tmp/msh_memcheck.txt
+ls nope 2> /tmp/msh_memcheck_err.txt
+cat /tmp/msh_memcheck.txt /tmp/msh_memcheck_err.txt
+cd /tmp
+pwd
+cd /nonexistent
+cd
+export GREETING=hello
+printenv GREETING
+export MSH_TRACE=2
+ls | cat > /dev/null
+echo x > /
+export MSH_TRACE=1
+ls -l | wc -l > /tmp/msh_memcheck.txt &
+export MSH_TRACE=0
+nosuchcmd
+| ls
+ls >
+ls ; pwd
+cd /tmp | cat
+export MSH_LEAK=1
+true | true
+export MSH_LEAK=0
+export MSH_REAPER=0
+sleep 0.1 &
+sleep 0.3
+export MSH_REAPER=1
+seq 1 20000 | sort -rn | head -1
+yes | head -2
+pwd > /tmp/msh_memcheck.txt
+exit 0
